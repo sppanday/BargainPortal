@@ -1,0 +1,75 @@
+﻿<!--By Surendra Panday-->
+<!--Learn how to style page from https://getbootstrap.com/docs/4.3/components/collapse/-->
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewData["Title"] = "contact page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   
+    <style>
+        .bs-example {
+            margin: 20px;
+        }
+
+        .accordion .fa {
+            margin-right: 0.5rem;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="bs-example">
+        <div class="accordion" id="accordionExample">
+            <h1>Frequently Asked Questions</h1>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i> Why can't I login I need help ?</button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>
+                            Please check with your password. Try to request a new password using <span>Forgot Password link</span> and if you still need help to retrieve your account, kindly send us
+                            message at abc@email.com and we will get back to you shortly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i> Someone is bullying through ads , I need help !!!</button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>
+                            NTBargainHunter doesn't tolerate cyber bullying or offensive remarks made to either advertiser or guest visitor. If you are victim of this , kindly let us know and an administrator will
+                            fix the issue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i> I can not buy product on sale, what do I do ? </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>This site usually advertises an item on sale. You would need to visit relevant advertiser through contact number they have given or to the local shop. We do not provide functionality to buy product through our side, we are just medium to some advertisers who take full responsibility how they want to sell their product.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>                                                     
