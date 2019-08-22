@@ -1,0 +1,115 @@
+﻿
+
+// These scripts have to be run individually inside a database/schema whatever you would call for a folder
+
+/**Author : Surendra Panday****
+
+1) Install Microsoft SQL server from microsoft - I have used 
+
+
+<!--NT Bargain Hunter-->
+
+2)  This is for table : ALL_USER_ACCOUNTS_DETAIL, right click database, and then "SCRIPT DATABASE AS" AND then "CREATE TO", AND THEN "new query editor window" and dump code until GO as below.
+
+USE [NTBARGAINHUNTER]
+GO
+
+/****** Object:  Table [dbo].[ALL_USER_ACCOUNTS_DETAIL]    Script Date: 19/08/2019 2:27:43 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[ALL_USER_ACCOUNTS_DETAIL](
+	[user_id] [bigint] NOT NULL,
+	[UserName] [nvarchar](50) NULL,
+	[email] [nvarchar](256) NOT NULL,
+	[email_confirmed] [bit] NULL,
+	[PasswordHash] [nvarchar](max) NULL,
+	[SecurityStamp] [nvarchar](max) NULL,
+	[PhoneNumber] [nvarchar](max) NULL,
+	[PhoneNumberConfirmed] [bit] NULL,
+	[TwoFactorEnabled] [bit] NULL,
+	[LockoutEndDateUtc] [datetime] NULL,
+	[LoginCountAttempt] [nchar](10) NULL,
+	[UserAccountCreatedDate] [datetime] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+
+(3) To create table : ITEM_INFO
+
+USE [NTBARGAINHUNTER]
+GO
+
+/****** Object:  Table [dbo].[ITEM_INFO]    Script Date: 19/08/2019 3:45:07 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[ITEM_INFO](
+	[item_id] [bigint] NOT NULL,
+	[item_name] [nvarchar](50) NOT NULL,
+	[item_desc] [nvarchar](50) NOT NULL,
+	[item_expiry_time] [datetime] NULL,
+	[unit_price] [bigint] NOT NULL,
+	[item_entry_time] [datetime] NOT NULL,
+ CONSTRAINT [PK_ITEM_INFO] PRIMARY KEY CLUSTERED 
+(
+	[item_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+(4) USER COMMENTS TABLE 
+USE [NTBARGAINHUNTER]
+GO
+
+/****** Object:  Table [dbo].[USER_COMMENTS]    Script Date: 19/08/2019 3:47:29 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[USER_COMMENTS](
+	[USER_ID] [bigint] NOT NULL,
+	[USER_COMMENT_DESC] [nvarchar](max) NULL,
+	[user_name] [nvarchar](50) NOT NULL,
+	[com_enter_date] [datetime] NOT NULL,
+ CONSTRAINT [PK_USER_COMMENTS] PRIMARY KEY CLUSTERED 
+(
+	[USER_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+(5) USE [NTBARGAINHUNTER]
+GO
+
+/****** Object:  Table [dbo].[USER_DETAILS]    Script Date: 19/08/2019 3:49:04 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[USER_DETAILS](
+	[user_id] [nchar](10) NULL,
+	[first_name] [nvarchar](50) NOT NULL,
+	[middle_name] [nvarchar](50) NOT NULL,
+	[last_name] [nvarchar](50) NOT NULL,
+	[email_addr] [nvarchar](50) NOT NULL,
+	[contact_number] [bigint] NOT NULL,
+	[street_address_1] [nvarchar](50) NULL,
+	[street_address_2] [nvarchar](50) NOT NULL,
+	[suburb] [nvarchar](50) NOT NULL,
+	[post_code] [nvarchar](50) NOT NULL,
+	[USER_TYP] [nvarchar](8) NOT NULL
+) ON [PRIMARY]
+GO
+
+

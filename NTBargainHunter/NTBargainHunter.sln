@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTBargainHunter", "NTBargainHunter.csproj", "{7AC9AC3B-5701-427C-A1E8-2B802409FFD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AC9AC3B-5701-427C-A1E8-2B802409FFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC9AC3B-5701-427C-A1E8-2B802409FFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC9AC3B-5701-427C-A1E8-2B802409FFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC9AC3B-5701-427C-A1E8-2B802409FFD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E1BA2B0-096B-4B6A-8A12-9A1CFFD92F53}
+	EndGlobalSection
+EndGlobal
