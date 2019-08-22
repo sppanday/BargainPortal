@@ -1,0 +1,124 @@
+﻿@{
+    ViewData["Title"] = "Our Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!--By Surendra Panday-->
+<!--Learn how to style page from https://getbootstrap.com/docs/4.3/components/collapse/-->
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Reference to write this doc - credit goes to - www.petercroll.com/files/privacypolicyeBook1.pdf -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap 4 Accordion with Plus Minus Icons</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .bs-example {
+            margin: 20px;
+        }
+
+        .accordion .fa {
+            margin-right: 0.5rem;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="bs-example">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i> COPYRIGHT </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h5>Copyright &#9400 NTBargainHunter 2019 </h5>
+                        <p>
+                            The right of <span>NTBargainHunter</span> to be identified as author of this website and has been done as a part of commercial website. Originally it was only designed to be
+                            university web application.
+                        </p>
+                        <p>
+                            This work is copyright. Apart from any use mentioned under <i>Copyright Act 2017</i>, no part may be reproduced, copied.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i> Collection through our website and Internet</button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>
+                            <span>NTBargainHunter</span> doesn't use your personal information against you or third party and doesn't disclose information to other parties, therefore we are not
+                            responsible for consequence of your action after you have provided your information. In order to safely track <i>Sales</i> in this website, we keep your
+                            basic information such as address, contact number or email address. Apart from sole use of recognising you in this website, we do not disclose your information
+                            or play against your will.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i> Sensitive Information </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>We do not normally collect your sensitive information such as health, race etc. Please refer to actual <i>Privacy Act</i> to understand more about how this might affect you. Our contact detail is displayed in contact page, and only information that is compulsory for you to provide would be contact number and email address. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Anonymity-->
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><i class="fa fa-plus"></i> Anonymity </button>
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>
+                        Except when you want to become a registered user of this website, we generally allow you to remain anonymous. You can contact us through our website using pseudonym or other names.
+                        When you contact us to talk about item on sale or cyber bullying we ensure we identify you correctly, so we may ask your email address via email and ask what incident may have occurred. For
+                        advertising purposes, you may need to register your account which means we might keep your personal data depending upon what you provide to us during registration process.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Terms and Condition Agreement-->
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"><i class="fa fa-plus"></i> Our Terms and Conditions Agreement</button>
+                </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    <h4>Disclaimer</h4>
+                    <!--Credit goes to information on https://www.privacypolicies.com/blog/privacy-policies-vs-terms-conditions/ -->
+                    <p>
+                        The information available through this site is solely for information purpose, provided by different advertisers and purposes on 
+                        website visitors own risk for anything put on sale. <span>NTBargainHunter</span> makes no guarantee as to the accurateness, quality and completeness of 
+                        information and <span>NTBargainHunter</span>shall not be responsible or liable for errors, ommission or inaccuracies of information or for any users reliance on
+                        the information. Users are solely responsible for verifying the information as being appropriate for user's personal use.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
